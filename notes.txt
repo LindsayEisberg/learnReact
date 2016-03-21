@@ -1,0 +1,41 @@
+Imperative: How to do something
+Declarative: What To do - this is more of an explanation:
+  ex: var numbers = [4,2,3,6]
+      numbers.reduce(function(previous, current){
+      return previous + current
+      })
+      - more of an abstraction
+
+React is for the most part declarative
+
+Composition
+  - thinking in terms of components
+  - composing larger components with smaller components
+  - instead of functions returning strings, react components will return react elements
+  - having a variable for profilePic, returning the actual react element of img
+
+Explicit Mutations
+  - differently from ng in that you have to setState for each new element
+
+React is just Javascript
+
+ex:
+var listItems = this.props.items.map(function(item, index) {
+ return (
+  <li style={styles.listGroup}>
+    <button style={styles.removeItem} onClick={this.props.remove.bind(null, index)}/>
+    <span>{item}</span>
+  </li>
+ )
+}.bind(this));
+
+Piecing the Puzzle
+- react router
+    allows us to map components to certain urls
+- Webpack
+    bundles all code into one file for you and you can put your code through certain transformations while that happens
+- Babel
+    transformations on code that will then go through webpack
+    react uses something called jsx andf needs to be converted to javascript to be understood
+-Axios
+    Used to make http requests
