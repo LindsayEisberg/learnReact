@@ -39,3 +39,17 @@ Piecing the Puzzle
     react uses something called jsx andf needs to be converted to javascript to be understood
 -Axios
     Used to make http requests
+
+
+    //Pure Functions
+    //// Evaluate the same result given the same arguments, doesnt depend on and doesnt modify the states of variables out of its scope and no side effects (mutations, async reqs)
+React Components should be:
+
+FOCUSED
+INDEPENDENT
+REUSABLE
+SMALL
+TESTABLE
+
+
+Reatc Router gives us a declarative way to rout our app
